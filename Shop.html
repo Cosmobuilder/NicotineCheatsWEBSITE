@@ -22,23 +22,35 @@
       }
 
       .text2 {
-        position: absolute;
-        top: 40%;
-        left: 0;
-        margin: 20px;
-        font-size: 48px;
-        color: white;
-        font-family: Arial, sans-serif;
-      }
-      .text3 {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        margin: 20px;
-        font-size: 48px;
-        color: white;
-        font-family: Arial, sans-serif;
-      }
+  position: absolute;
+  top: 40%;
+  left: -100%;
+  margin: 20px;
+  font-size: 48px;
+  color: white;
+  font-family: Arial, sans-serif;
+  animation: slideIn 1s forwards;
+}
+
+.text3 {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  margin: 20px;
+  font-size: 48px;
+  color: white;
+  font-family: Arial, sans-serif;
+  animation: slideIn 1s 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
       #button {
         position: absolute;
         top: 45%;
